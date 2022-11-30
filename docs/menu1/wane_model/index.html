@@ -1,0 +1,829 @@
+<!doctype html><html lang=en-us dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="h1 {background: #c2edff;padding: 0.5em;}h2 {padding: 0.25em 0.5em;color: #494949;background: transparent;border-left: solid 5px #7db4e6;}table.normal {border-collapse: collapse;border:1px solid gray;font-size: 80%;}table.normal th, table.normal td {border: 1px solid gray;}code {font-size: 80%;display: inline-block;padding: 0.1em 0.25em;color: #444;background-color: #e7edf3;border-radius: 3px;border: solid 1px #d6dde4;}Model Reportsm_vactriggerstate (from)state (to)event nameevent formulaselect_no_vacstartselect_no_vacselect_no_vacselect_no_vacselect_1_vacstartselect_1_vacselect_1_vacselect_1_vacselect_2_vacstartselect_2_vacselect_2_vacselect_2_vacinit_vac_endselect_no_vacinit_vac_endinit_vac_endinit_vac_endinit_vac_endselect_1_vacinit_vac_endinit_vac_endinit_vac_endinit_vac_endselect_2_vacinit_vac_endinit_vac_endinit_vac_endvac1init_vac_endget_vac1vac1vac1vac0_outinit_vac_endvac0_out(infect_c19|vac0_out)(infect_c19|vac0_out)vac2get_vac1get_vac2vac2vac2vac1_outget_vac1vac1_out(infect_c19|vac1_out)(infect_c19|vac1_out)sm_infecttriggerstate (from)state (to)event nameevent formulainfect_c19startinfect_c19infect_c19infect_c19PCR_positiveinfect_c19PCR_positivePCR_positivePCR_positivesm_vac1_efftriggerstate (from)state (to)event nameevent formulavac1startvac1_branchget_vac1get_vac1vac1_no_adv_no_eff_pathvac1_branchvac1_no_adv_no_eff_pathvac1_no_adv_no_eff_pathvac1_no_adv_no_eff_pathvac1_no_adv_eff_pathvac1_branchvac1_no_adv_eff_pathvac1_no_adv_eff_pathvac1_no_adv_eff_pathvac1_adv_no_eff_pathvac1_branchvac1_adv_no_eff_pathvac1_adv_no_eff_pathvac1_adv_no_eff_pathvac1_adv_eff_pathvac1_branchvac1_adv_eff_pathvac1_adv_eff_pathvac1_adv_eff_pathvac1_effvac1_no_adv_eff_pathvac1_effvac1_effvac1_effvac1_adv_endvac1_adv_no_eff_pathvac1_adv_endvac1_adv_endvac1_adv_endvac1_adv_end_and_effvac1_adv_eff_pathvac1_adv_end_and_effvac1_adv_end_and_effvac1_adv_end_and_effsm_vac2_efftriggerstate (from)state (to)event nameevent formulavac2startvac2_branchget_vac2get_vac2vac2_no_adv_no_eff_pathvac2_branchvac2_no_adv_no_eff_pathvac2_no_adv_no_eff_pathvac2_no_adv_no_eff_pathvac2_no_adv_eff_pathvac2_branchvac2_no_adv_eff_pathvac2_no_adv_eff_pathvac2_no_adv_eff_pathvac2_adv_no_eff_pathvac2_branchvac2_adv_no_eff_pathvac2_adv_no_eff_pathvac2_adv_no_eff_pathvac2_adv_eff_pathvac2_branchvac2_adv_eff_pathvac2_adv_eff_pathvac2_adv_eff_pathvac2_effvac2_no_adv_eff_pathvac2_effvac2_effvac2_effvac2_adv_endvac2_adv_no_eff_pathvac2_adv_endvac2_adv_endvac2_adv_endvac2_adv_end_and_effvac2_adv_eff_pathvac2_adv_end_and_effvac2_adv_end_and_effvac2_adv_end_and_effsm_vaceffstatustriggerstate (from)state (to)event nameevent formulainit_vaceff_endstartno_vaceffinit_vaceff_endinit_vaceff_endvaceffno_vaceffvaceffvaceffvaceffno_vaceffvaceffno_vaceffvaceffvaceffEventevent nameevent typeevent infovac1_no_adv_no_eff_pathRandomEventChildparent=vac1_branch, parent start_state=vac1_branchvac2_effTimerEventstart_state=vac2_no_adv_eff_pathfunction return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(sm_name, tag_name, current_time, parameter)">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="wane model">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://schrodingers-koala.github.io/docs/menu1/wane_model/">
+<title>wane model | Schrodinger's Koala</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.e6518e94f9509e03934f6ba85721c25f17b828bbf0376b4657649125b7a40c24.js integrity="sha256-5lGOlPlQngOTT2uoVyHCXxe4KLvwN2tGV2SRJbekDCQ=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://schrodingers-koala.github.io/docs/menu1/wane_model/index.xml title="Schrodinger's Koala">
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>Schrodinger's Koala</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=/docs/menu1/>VEAME Example Model</a>
+<ul>
+<li>
+<a href=/docs/menu1/fever_model/>fever model</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/simple_model/>simple model</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/simple_model_with_3rd_dose/>simple model with 3rd dose</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/simple_model_with_varying_infection_rate/>simple model with varying infection rate</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/wane_model/ class=active>wane model</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>wane model</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents></nav>
+</aside>
+</header>
+<article class=markdown>
+<html>
+<head>
+<style>h1{background:#c2edff;padding:.5em}h2{padding:.25em .5em;color:#494949;background:0 0;border-left:solid 5px #7db4e6}table.normal{border-collapse:collapse;border:1px solid gray;font-size:80%}table.normal th,table.normal td{border:1px solid gray}code{font-size:80%;display:inline-block;padding:.1em .25em;color:#444;background-color:#e7edf3;border-radius:3px;border:solid 1px #d6dde4}</style>
+</head>
+<body>
+<div id=content>
+<h1>Model Report</h1>
+<h2>sm_vac</h2>
+<img src=sm_vac.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>select_no_vac</td>
+<td><a href=#sm_vac_start>start</a></td>
+<td><a href=#sm_vac_select_no_vac>select_no_vac</a></td>
+<td>select_no_vac</td>
+<td><a href=#select_no_vac>select_no_vac</a></td>
+</tr>
+<tr>
+<td>select_1_vac</td>
+<td><a href=#sm_vac_start>start</a></td>
+<td><a href=#sm_vac_select_1_vac>select_1_vac</a></td>
+<td>select_1_vac</td>
+<td><a href=#select_1_vac>select_1_vac</a></td>
+</tr>
+<tr>
+<td>select_2_vac</td>
+<td><a href=#sm_vac_start>start</a></td>
+<td><a href=#sm_vac_select_2_vac>select_2_vac</a></td>
+<td>select_2_vac</td>
+<td><a href=#select_2_vac>select_2_vac</a></td>
+</tr>
+<tr>
+<td>init_vac_end</td>
+<td><a href=#sm_vac_select_no_vac>select_no_vac</a></td>
+<td><a href=#sm_vac_init_vac_end>init_vac_end</a></td>
+<td>init_vac_end</td>
+<td><a href=#init_vac_end>init_vac_end</a></td>
+</tr>
+<tr>
+<td>init_vac_end</td>
+<td><a href=#sm_vac_select_1_vac>select_1_vac</a></td>
+<td><a href=#sm_vac_init_vac_end>init_vac_end</a></td>
+<td>init_vac_end</td>
+<td><a href=#init_vac_end>init_vac_end</a></td>
+</tr>
+<tr>
+<td>init_vac_end</td>
+<td><a href=#sm_vac_select_2_vac>select_2_vac</a></td>
+<td><a href=#sm_vac_init_vac_end>init_vac_end</a></td>
+<td>init_vac_end</td>
+<td><a href=#init_vac_end>init_vac_end</a></td>
+</tr>
+<tr>
+<td>vac1</td>
+<td><a href=#sm_vac_init_vac_end>init_vac_end</a></td>
+<td><a href=#sm_vac_get_vac1>get_vac1</a></td>
+<td>vac1</td>
+<td><a href=#vac1>vac1</a></td>
+</tr>
+<tr>
+<td>vac0_out</td>
+<td><a href=#sm_vac_init_vac_end>init_vac_end</a></td>
+<td><a href=#sm_vac_vac0_out>vac0_out</a></td>
+<td>(infect_c19|vac0_out)</td>
+<td>(<a href=#infect_c19>infect_c19</a>|<a href=#vac0_out>vac0_out</a>)</td>
+</tr>
+<tr>
+<td>vac2</td>
+<td><a href=#sm_vac_get_vac1>get_vac1</a></td>
+<td><a href=#sm_vac_get_vac2>get_vac2</a></td>
+<td>vac2</td>
+<td><a href=#vac2>vac2</a></td>
+</tr>
+<tr>
+<td>vac1_out</td>
+<td><a href=#sm_vac_get_vac1>get_vac1</a></td>
+<td><a href=#sm_vac_vac1_out>vac1_out</a></td>
+<td>(infect_c19|vac1_out)</td>
+<td>(<a href=#infect_c19>infect_c19</a>|<a href=#vac1_out>vac1_out</a>)</td>
+</tr>
+</tbody>
+</table>
+<h2>sm_infect</h2>
+<img src=sm_infect.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>infect_c19</td>
+<td><a href=#sm_infect_start>start</a></td>
+<td><a href=#sm_infect_infect_c19>infect_c19</a></td>
+<td>infect_c19</td>
+<td><a href=#infect_c19>infect_c19</a></td>
+</tr>
+<tr>
+<td>PCR_positive</td>
+<td><a href=#sm_infect_infect_c19>infect_c19</a></td>
+<td><a href=#sm_infect_PCR_positive>PCR_positive</a></td>
+<td>PCR_positive</td>
+<td><a href=#PCR_positive>PCR_positive</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vac1_eff</h2>
+<img src=sm_vac1_eff.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vac1</td>
+<td><a href=#sm_vac1_eff_start>start</a></td>
+<td><a href=#sm_vac1_eff_vac1_branch>vac1_branch</a></td>
+<td>get_vac1</td>
+<td><a href=#get_vac1>get_vac1</a></td>
+</tr>
+<tr>
+<td>vac1_no_adv_no_eff_path</td>
+<td><a href=#sm_vac1_eff_vac1_branch>vac1_branch</a></td>
+<td><a href=#sm_vac1_eff_vac1_no_adv_no_eff_path>vac1_no_adv_no_eff_path</a></td>
+<td>vac1_no_adv_no_eff_path</td>
+<td><a href=#vac1_no_adv_no_eff_path>vac1_no_adv_no_eff_path</a></td>
+</tr>
+<tr>
+<td>vac1_no_adv_eff_path</td>
+<td><a href=#sm_vac1_eff_vac1_branch>vac1_branch</a></td>
+<td><a href=#sm_vac1_eff_vac1_no_adv_eff_path>vac1_no_adv_eff_path</a></td>
+<td>vac1_no_adv_eff_path</td>
+<td><a href=#vac1_no_adv_eff_path>vac1_no_adv_eff_path</a></td>
+</tr>
+<tr>
+<td>vac1_adv_no_eff_path</td>
+<td><a href=#sm_vac1_eff_vac1_branch>vac1_branch</a></td>
+<td><a href=#sm_vac1_eff_vac1_adv_no_eff_path>vac1_adv_no_eff_path</a></td>
+<td>vac1_adv_no_eff_path</td>
+<td><a href=#vac1_adv_no_eff_path>vac1_adv_no_eff_path</a></td>
+</tr>
+<tr>
+<td>vac1_adv_eff_path</td>
+<td><a href=#sm_vac1_eff_vac1_branch>vac1_branch</a></td>
+<td><a href=#sm_vac1_eff_vac1_adv_eff_path>vac1_adv_eff_path</a></td>
+<td>vac1_adv_eff_path</td>
+<td><a href=#vac1_adv_eff_path>vac1_adv_eff_path</a></td>
+</tr>
+<tr>
+<td>vac1_eff</td>
+<td><a href=#sm_vac1_eff_vac1_no_adv_eff_path>vac1_no_adv_eff_path</a></td>
+<td><a href=#sm_vac1_eff_vac1_eff>vac1_eff</a></td>
+<td>vac1_eff</td>
+<td><a href=#vac1_eff>vac1_eff</a></td>
+</tr>
+<tr>
+<td>vac1_adv_end</td>
+<td><a href=#sm_vac1_eff_vac1_adv_no_eff_path>vac1_adv_no_eff_path</a></td>
+<td><a href=#sm_vac1_eff_vac1_adv_end>vac1_adv_end</a></td>
+<td>vac1_adv_end</td>
+<td><a href=#vac1_adv_end>vac1_adv_end</a></td>
+</tr>
+<tr>
+<td>vac1_adv_end_and_eff</td>
+<td><a href=#sm_vac1_eff_vac1_adv_eff_path>vac1_adv_eff_path</a></td>
+<td><a href=#sm_vac1_eff_vac1_adv_end_and_eff>vac1_adv_end_and_eff</a></td>
+<td>vac1_adv_end_and_eff</td>
+<td><a href=#vac1_adv_end_and_eff>vac1_adv_end_and_eff</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vac2_eff</h2>
+<img src=sm_vac2_eff.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vac2</td>
+<td><a href=#sm_vac2_eff_start>start</a></td>
+<td><a href=#sm_vac2_eff_vac2_branch>vac2_branch</a></td>
+<td>get_vac2</td>
+<td><a href=#get_vac2>get_vac2</a></td>
+</tr>
+<tr>
+<td>vac2_no_adv_no_eff_path</td>
+<td><a href=#sm_vac2_eff_vac2_branch>vac2_branch</a></td>
+<td><a href=#sm_vac2_eff_vac2_no_adv_no_eff_path>vac2_no_adv_no_eff_path</a></td>
+<td>vac2_no_adv_no_eff_path</td>
+<td><a href=#vac2_no_adv_no_eff_path>vac2_no_adv_no_eff_path</a></td>
+</tr>
+<tr>
+<td>vac2_no_adv_eff_path</td>
+<td><a href=#sm_vac2_eff_vac2_branch>vac2_branch</a></td>
+<td><a href=#sm_vac2_eff_vac2_no_adv_eff_path>vac2_no_adv_eff_path</a></td>
+<td>vac2_no_adv_eff_path</td>
+<td><a href=#vac2_no_adv_eff_path>vac2_no_adv_eff_path</a></td>
+</tr>
+<tr>
+<td>vac2_adv_no_eff_path</td>
+<td><a href=#sm_vac2_eff_vac2_branch>vac2_branch</a></td>
+<td><a href=#sm_vac2_eff_vac2_adv_no_eff_path>vac2_adv_no_eff_path</a></td>
+<td>vac2_adv_no_eff_path</td>
+<td><a href=#vac2_adv_no_eff_path>vac2_adv_no_eff_path</a></td>
+</tr>
+<tr>
+<td>vac2_adv_eff_path</td>
+<td><a href=#sm_vac2_eff_vac2_branch>vac2_branch</a></td>
+<td><a href=#sm_vac2_eff_vac2_adv_eff_path>vac2_adv_eff_path</a></td>
+<td>vac2_adv_eff_path</td>
+<td><a href=#vac2_adv_eff_path>vac2_adv_eff_path</a></td>
+</tr>
+<tr>
+<td>vac2_eff</td>
+<td><a href=#sm_vac2_eff_vac2_no_adv_eff_path>vac2_no_adv_eff_path</a></td>
+<td><a href=#sm_vac2_eff_vac2_eff>vac2_eff</a></td>
+<td>vac2_eff</td>
+<td><a href=#vac2_eff>vac2_eff</a></td>
+</tr>
+<tr>
+<td>vac2_adv_end</td>
+<td><a href=#sm_vac2_eff_vac2_adv_no_eff_path>vac2_adv_no_eff_path</a></td>
+<td><a href=#sm_vac2_eff_vac2_adv_end>vac2_adv_end</a></td>
+<td>vac2_adv_end</td>
+<td><a href=#vac2_adv_end>vac2_adv_end</a></td>
+</tr>
+<tr>
+<td>vac2_adv_end_and_eff</td>
+<td><a href=#sm_vac2_eff_vac2_adv_eff_path>vac2_adv_eff_path</a></td>
+<td><a href=#sm_vac2_eff_vac2_adv_end_and_eff>vac2_adv_end_and_eff</a></td>
+<td>vac2_adv_end_and_eff</td>
+<td><a href=#vac2_adv_end_and_eff>vac2_adv_end_and_eff</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vaceffstatus</h2>
+<img src=sm_vaceffstatus.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>init_vaceff_end</td>
+<td><a href=#sm_vaceffstatus_start>start</a></td>
+<td><a href=#sm_vaceffstatus_no_vaceff>no_vaceff</a></td>
+<td>init_vaceff_end</td>
+<td><a href=#init_vaceff_end>init_vaceff_end</a></td>
+</tr>
+<tr>
+<td>vaceff</td>
+<td><a href=#sm_vaceffstatus_no_vaceff>no_vaceff</a></td>
+<td><a href=#sm_vaceffstatus_vaceff>vaceff</a></td>
+<td>vaceff</td>
+<td><a href=#vaceff>vaceff</a></td>
+</tr>
+<tr>
+<td>no_vaceff</td>
+<td><a href=#sm_vaceffstatus_vaceff>vaceff</a></td>
+<td><a href=#sm_vaceffstatus_no_vaceff>no_vaceff</a></td>
+<td>vaceff</td>
+<td><a href=#vaceff>vaceff</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Event</h2>
+<table class=normal>
+<tbody>
+<tr>
+<th>event name</th>
+<th>event type</th>
+<th>event info</th>
+</tr>
+<tr>
+<td><div id=vac1_no_adv_no_eff_path>vac1_no_adv_no_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1_branch, parent start_state=vac1_branch</td>
+</tr>
+<tr>
+<td><div id=vac2_eff>vac2_eff</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2_no_adv_eff_path<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_eff</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1_no_adv_eff_path>vac1_no_adv_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1_branch, parent start_state=vac1_branch</td>
+</tr>
+<tr>
+<td><div id=vac1_adv_no_eff_path>vac1_adv_no_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1_branch, parent start_state=vac1_branch</td>
+</tr>
+<tr>
+<td><div id=vac2_adv_end>vac2_adv_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2_adv_no_eff_path<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_adv_end</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1_adv_eff_path>vac1_adv_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1_branch, parent start_state=vac1_branch</td>
+</tr>
+<tr>
+<td><div id=vac1_eff>vac1_eff</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1_no_adv_eff_path<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_eff</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2_adv_end_and_eff>vac2_adv_end_and_eff</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2_adv_eff_path<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_adv_end_and_eff</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1_adv_end>vac1_adv_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1_adv_no_eff_path<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_adv_end</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1_adv_end_and_eff>vac1_adv_end_and_eff</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1_adv_eff_path<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_adv_end_and_eff</code></p></td>
+</tr>
+<tr>
+<td><div id=infect_c19>infect_c19</div></td>
+<td>StochasticEvent</td>
+<td>start_state=start<p>function</br><code> probability_func=lambda current_time, parameter: parameter[
+"infection_immune_adjust_c19"
+]
+</code></p></td>
+</tr>
+<tr>
+<td><div id=PCR_positive>PCR_positive</div></td>
+<td>DummyEvent</td>
+<td></td>
+</tr>
+<tr>
+<td><div id=select_no_vac>select_no_vac</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac_selection, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=select_1_vac>select_1_vac</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac_selection, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=select_2_vac>select_2_vac</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac_selection, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=init_vaceff_end>init_vaceff_end</div></td>
+<td>DummyEvent</td>
+<td></td>
+</tr>
+<tr>
+<td><div id=init_vac_end>init_vac_end</div></td>
+<td>DummyEvent</td>
+<td></td>
+</tr>
+<tr>
+<td><div id=vaceff>vaceff</div></td>
+<td>ParameterEvent</td>
+<td>name=infection_immune_adjust_c19, value=0</td>
+</tr>
+<tr>
+<td><div id=vac1>vac1</div></td>
+<td>TimerEvent</td>
+<td>start_state=init_vac_end<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac, tag_name=vac1</code></p></td>
+</tr>
+<tr>
+<td><div id=vaceff>vaceff</div></td>
+<td>ParameterEvent</td>
+<td>name=infection_immune_adjust_c19, value=2.0</td>
+</tr>
+<tr>
+<td><div id=vac2>vac2</div></td>
+<td>TimerEvent</td>
+<td>start_state=get_vac1<p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac, tag_name=vac2</code></p></td>
+</tr>
+<tr>
+<td><div id=vac0_out>vac0_out</div></td>
+<td>ParameterEvent</td>
+<td>name=select_vac, value=0</td>
+</tr>
+<tr>
+<td><div id=vac1_out>vac1_out</div></td>
+<td>ParameterEvent</td>
+<td>name=select_vac, value=1</td>
+</tr>
+<tr>
+<td><div id=get_vac1>get_vac1</div></td>
+<td>StateEvent</td>
+<td>state=get_vac1</td>
+</tr>
+<tr>
+<td><div id=get_vac2>get_vac2</div></td>
+<td>StateEvent</td>
+<td>state=get_vac2</td>
+</tr>
+<tr>
+<td><div id=vac2_no_adv_no_eff_path>vac2_no_adv_no_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2_branch, parent start_state=vac2_branch</td>
+</tr>
+<tr>
+<td><div id=vac2_no_adv_eff_path>vac2_no_adv_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2_branch, parent start_state=vac2_branch</td>
+</tr>
+<tr>
+<td><div id=vac2_adv_no_eff_path>vac2_adv_no_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2_branch, parent start_state=vac2_branch</td>
+</tr>
+<tr>
+<td><div id=vac2_adv_eff_path>vac2_adv_eff_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2_branch, parent start_state=vac2_branch</td>
+</tr>
+</tbody>
+</table>
+<h2>State</h2>
+<table class=normal>
+<tbody>
+<tr>
+<th>state machine</th>
+<th>state name</th>
+<th>state info and update parameter func</th>
+</tr>
+<tr>
+<td>sm_infect</td>
+<td><div id=sm_infect_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_init_vac_end>init_vac_end</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_infect</td>
+<td><div id=sm_infect_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_select_1_vac>select_1_vac</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac, tag_name=select_1_vac</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_get_vac1>get_vac1</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_infect</td>
+<td><div id=sm_infect_infect_c19>infect_c19</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac0_out>vac0_out</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_infect</td>
+<td><div id=sm_infect_PCR_positive>PCR_positive</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vaceffstatus</td>
+<td><div id=sm_vaceffstatus_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_get_vac2>get_vac2</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_branch>vac2_branch</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vaceffstatus</td>
+<td><div id=sm_vaceffstatus_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_out>vac1_out</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_no_adv_no_eff_path>vac2_no_adv_no_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_no_adv_no_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vaceffstatus</td>
+<td><div id=sm_vaceffstatus_no_vaceff>no_vaceff</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_no_adv_eff_path>vac2_no_adv_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_no_adv_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vaceffstatus</td>
+<td><div id=sm_vaceffstatus_vaceff>vaceff</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_branch>vac1_branch</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_adv_no_eff_path>vac2_adv_no_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_adv_no_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_no_adv_no_eff_path>vac1_no_adv_no_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_no_adv_no_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_select_2_vac>select_2_vac</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac, tag_name=select_2_vac</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_adv_eff_path>vac2_adv_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_adv_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_no_adv_eff_path>vac1_no_adv_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_no_adv_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_eff>vac2_eff</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_eff</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_select_no_vac>select_no_vac</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac, tag_name=select_no_vac</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_adv_no_eff_path>vac1_adv_no_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_adv_no_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_adv_end>vac2_adv_end</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_adv_end</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_adv_eff_path>vac1_adv_eff_path</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_adv_eff_path</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2_eff</td>
+<td><div id=sm_vac2_eff_vac2_adv_end_and_eff>vac2_adv_end_and_eff</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2_eff, tag_name=vac2_adv_end_and_eff</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_eff>vac1_eff</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_eff</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_adv_end>vac1_adv_end</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_adv_end</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1_eff</td>
+<td><div id=sm_vac1_eff_vac1_adv_end_and_eff>vac1_adv_end_and_eff</div></td>
+<td><p>function</br><code> return lambda current_time, parameter, sm_name=sm_name, tag_name=tag_name: hpm_func(
+sm_name, tag_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1_eff, tag_name=vac1_adv_end_and_eff</code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents></nav>
+</div>
+</aside>
+</main>
+</body>
+</html>

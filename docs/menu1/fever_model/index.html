@@ -1,0 +1,2400 @@
+<!doctype html><html lang=en-us dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="h1 {background: #c2edff;padding: 0.5em;}h2 {padding: 0.25em 0.5em;color: #494949;background: transparent;border-left: solid 5px #7db4e6;}table.normal {border-collapse: collapse;border:1px solid gray;font-size: 80%;}table.normal th, table.normal td {border: 1px solid gray;}code {font-size: 80%;display: inline-block;padding: 0.1em 0.25em;color: #444;background-color: #e7edf3;border-radius: 3px;border: solid 1px #d6dde4;}Model Reportsm_vactriggerstate (from)state (to)event nameevent formulavaccinestartvaccinevaccinevaccineplacebostartplaceboplaceboplaceboselect_get_vacvaccineselect_get_vacselect_get_vacselect_get_vacselect_get_vacplaceboselect_get_vacselect_get_vacselect_get_vacget_vac_0select_get_vacget_vac_0get_vac_0get_vac_0get_vac_1select_get_vacget_vac_1get_vac_1get_vac_1get_vac_2select_get_vacget_vac_2get_vac_2get_vac_2init_endget_vac_0init_endinit_endinit_endinit_endget_vac_1init_endinit_endinit_endinit_endget_vac_2init_endinit_endinit_endvac1_readyinit_endvac1_readyvac1_readyvac1_readyvac0_outinit_endvac0_outvac0_outvac0_outvac1_checkvac1_readyvac1_check(~((on_fever|on_PCR_positive)))(~((on_fever|on_PCR_positive)))vac1_reqvac1_checkvac1_reqvac1_reqvac1_reqvac1_aftervac1_reqvac1_aftervac1_timervac1_timervac1_cancelvac1_reqvac1_cancel(on_fever|on_PCR_positive)(on_fever|on_PCR_positive)vac2_readyvac1_aftervac2_readyvac2_readyvac2_readyvac1_outvac1_aftervac1_outvac1_outvac1_outvac1_resetvac1_cancelvac1_ready(~((on_fever|on_PCR_positive)))(~((on_fever|on_PCR_positive)))vac2_checkvac2_readyvac2_check(~((on_fever|on_PCR_positive)))(~((on_fever|on_PCR_positive)))vac2_reqvac2_checkvac2_reqvac2_reqvac2_reqvac2_aftervac2_reqvac2_aftervac2_timervac2_timervac2_cancelvac2_reqvac2_cancel(on_fever|on_PCR_positive)(on_fever|on_PCR_positive)vac2_resetvac2_cancelvac2_ready(~((on_fever|on_PCR_positive)))(~((on_fever|on_PCR_positive)))sm_pcrtriggerstate (from)state (to)event nameevent formulaPCR_requeststartPCR_request(on_fever&pcr_request_not_received)(on_fever&pcr_request_not_received)PCR_request_receivedPCR_requestPCR_reception_branchPCR_request_receivedPCR_request_receivedPCR_acceptPCR_reception_branchPCR_acceptPCR_acceptPCR_acceptPCR_rejectPCR_reception_branchstartPCR_rejectPCR_rejectPCR_checkPCR_acceptPCR_checkPCR_checkPCR_checkPCR_resultPCR_checkPCR_resultPCR_resultPCR_resultPCR_positivePCR_resultPCR_positivePCR_positivePCR_positivePCR_negativePCR_resultstartPCR_negativePCR_negativesm_vac1advtriggerstate (from)state (to)event nameevent formulavac1adv_vacstartvac1adv_vacvac1vac1vac1adv_none_pathvac1adv_vacvac1adv_none_pathvac1adv_none_pathvac1adv_none_pathvac1adv_fever_pathvac1adv_vacvac1adv_fever_pathvac1adv_fever_pathvac1adv_fever_pathvac1adv_worse_pathvac1adv_vacvac1adv_worse_pathvac1adv_worse_pathvac1adv_worse_pathvac1adv_nonevac1adv_none_pathvac1adv_nonevac1adv_nonevac1adv_nonevac1adv_fevervac1adv_fever_pathvac1adv_fevervac1adv_fevervac1adv_fevervac1adv_fever_before_worsevac1adv_worse_pathvac1adv_fever_before_worsevac1adv_fever_before_worsevac1adv_fever_before_worsevac1adv_worsevac1adv_fever_before_worsevac1adv_worsevac1adv_worsevac1adv_worsesm_vac2advtriggerstate (from)state (to)event nameevent formulavac2adv_vacstartvac2adv_vacvac2vac2vac2adv_none_pathvac2adv_vacvac2adv_none_pathvac2adv_none_pathvac2adv_none_pathvac2adv_fever_pathvac2adv_vacvac2adv_fever_pathvac2adv_fever_pathvac2adv_fever_pathvac2adv_worse_pathvac2adv_vacvac2adv_worse_pathvac2adv_worse_pathvac2adv_worse_pathvac2adv_nonevac2adv_none_pathvac2adv_nonevac2adv_nonevac2adv_nonevac2adv_fevervac2adv_fever_pathvac2adv_fevervac2adv_fevervac2adv_fevervac2adv_fever_before_worsevac2adv_worse_pathvac2adv_fever_before_worsevac2adv_fever_before_worsevac2adv_fever_before_worsevac2adv_worsevac2adv_fever_before_worsevac2adv_worsevac2adv_worsevac2adv_worsesm_vac1efftriggerstate (from)state (to)event nameevent formulavac1eff_vacstartvac1eff_vacvac1vac1vac1eff_no_effect_pathvac1eff_vacvac1eff_no_effect_pathvac1eff_no_effect_pathvac1eff_no_effect_pathvac1eff_effect_pathvac1eff_vacvac1eff_effect_pathvac1eff_effect_pathvac1eff_effect_pathvac1eff_no_effectvac1eff_no_effect_pathvac1eff_no_effectvac1eff_no_effectvac1eff_no_effectvac1eff_effectvac1eff_effect_pathvac1eff_effectvac1eff_effectvac1eff_effectsm_vac2efftriggerstate (from)state (to)event nameevent formulavac2eff_vacstartvac2eff_vacvac2vac2vac2eff_no_effect_pathvac2eff_vacvac2eff_no_effect_pathvac2eff_no_effect_pathvac2eff_no_effect_pathvac2eff_effect_pathvac2eff_vacvac2eff_effect_pathvac2eff_effect_pathvac2eff_effect_pathvac2eff_no_effectvac2eff_no_effect_pathvac2eff_no_effectvac2eff_no_effectvac2eff_no_effectvac2eff_effectvac2eff_effect_pathvac2eff_effectvac2eff_effectvac2eff_effectsm_coldtriggerstate (from)state (to)event nameevent formulacold_not_curedstartcold_change_branchcold_not_curedcold_not_curedcold_dropstartdropcold_dropcold_dropcold_curedstartcold_curedcold_curedcold_curedcold_curecold_change_branchcold_curecold_curecold_curecold_worsecold_change_branchcold_worsecold_worsecold_worseinfect_coldcold_curedcold_worse_endinfect_coldinfect_coldcold_cure_endcold_curecold_cure_endcold_cure_endcold_cure_endcold_worse_endcold_worsecold_worse_endcold_worse_endcold_worse_endreset-start(+(cold_val_change))(+(cold_val_change))sm_vacadvtriggerstate (from)state (to)event nameevent formulavacadv_not_curedstartvacadv_change_branchvacadv_not_curedvacadv_not_curedvacadv_dropstartdropvacadv_dropvacadv_dropvacadv_curedstartvacadv_curedvacadv_curedvacadv_curedvacadv_curevacadv_change_branchvacadv_curevacadv_curevacadv_curevacadv_worsevacadv_change_branchvacadv_worsevacadv_worsevacadv_worsevacadv_cure_endvacadv_curevacadv_cure_endvacadv_cure_endvacadv_cure_endvacadv_worse_endvacadv_worsevacadv_worse_endvacadv_worse_endvacadv_worse_endreset-start(+(vacadv_val_change))(+(vacadv_val_change))sm_c19triggerstate (from)state (to)event nameevent formulac19_not_curedstartc19_change_branchc19_not_curedc19_not_curedc19_dropstartdropc19_dropc19_dropc19_curedstartc19_curedc19_curedc19_curedc19_curec19_change_branchc19_curec19_curec19_curec19_worsec19_change_branchc19_worsec19_worsec19_worseinfect_c19c19_curedc19_worse_endinfect_c19infect_c19c19_cure_endc19_curec19_cure_endc19_cure_endc19_cure_endc19_worse_endc19_worsec19_worse_endc19_worse_endc19_worse_endreset-start(+(c19_val_change))(+(c19_val_change))sm_sicktriggerstate (from)state (to)event nameevent formulasick_not_curedstartsick_change_branchsick_not_curedsick_not_curedsick_dropstartdropsick_dropsick_dropsick_curedstartsick_curedsick_curedsick_curedsick_curesick_change_branchsick_curesick_curesick_curesick_worsesick_change_branchsick_worsesick_worsesick_worsesick_cure_endsick_curesick_cure_endsick_cure_endsick_cure_endsick_worse_endsick_worsesick_worse_endsick_worse_endsick_worse_endreset-start(+(sick_val_change))(+(sick_val_change))sm_feversumtriggerstate (from)state (to)event nameevent formulafeversum_up_to_0startfeversum_0feversum_up_to_0feversum_up_to_0feversum_up_to_1feversum_0feversum_1feversum_up_to_1feversum_up_to_1feversum_down_to_0feversum_1feversum_0feversum_down_to_0feversum_down_to_0feversum_up_to_2feversum_1feversum_2feversum_up_to_2feversum_up_to_2feversum_down_to_1feversum_2feversum_1feversum_down_to_1feversum_down_to_1sm_sicksumtriggerstate (from)state (to)event nameevent formulasicksum_up_to_0startsicksum_0sicksum_up_to_0sicksum_up_to_0sicksum_up_to_1sicksum_0sicksum_1sicksum_up_to_1sicksum_up_to_1sicksum_down_to_0sicksum_1sicksum_0sicksum_down_to_0sicksum_down_to_0sicksum_up_to_2sicksum_1sicksum_2sicksum_up_to_2sicksum_up_to_2sicksum_down_to_1sicksum_2sicksum_1sicksum_down_to_1sicksum_down_to_1sicksum_up_to_3sicksum_2sicksum_3sicksum_up_to_3sicksum_up_to_3sicksum_down_to_2sicksum_3sicksum_2sicksum_down_to_2sicksum_down_to_2sicksum_up_to_4sicksum_3sicksum_4sicksum_up_to_4sicksum_up_to_4sicksum_down_to_3sicksum_4sicksum_3sicksum_down_to_3sicksum_down_to_3sicksum_up_to_5sicksum_4sicksum_5sicksum_up_to_5sicksum_up_to_5sicksum_down_to_4sicksum_5sicksum_4sicksum_down_to_4sicksum_down_to_4Eventevent nameevent typeevent infofeversum_up_to_0ParameterEventfunction lambda parameter, level=-1: self.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="fever model">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://schrodingers-koala.github.io/docs/menu1/fever_model/">
+<title>fever model | Schrodinger's Koala</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.c58292d36b18b675680ab9baea2029204537b839ea72f258746ec0f32ce8d6c8.css integrity="sha256-xYKS02sYtnVoCrm66iApIEU3uDnqcvJYdG7A8yzo1sg=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.e6518e94f9509e03934f6ba85721c25f17b828bbf0376b4657649125b7a40c24.js integrity="sha256-5lGOlPlQngOTT2uoVyHCXxe4KLvwN2tGV2SRJbekDCQ=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://schrodingers-koala.github.io/docs/menu1/fever_model/index.xml title="Schrodinger's Koala">
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>Schrodinger's Koala</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul>
+<li>
+<a href=/docs/menu1/>VEAME Example Model</a>
+<ul>
+<li>
+<a href=/docs/menu1/fever_model/ class=active>fever model</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/simple_model/>simple model</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/simple_model_with_3rd_dose/>simple model with 3rd dose</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/simple_model_with_varying_infection_rate/>simple model with varying infection rate</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=/docs/menu1/wane_model/>wane model</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>fever model</strong>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div>
+<aside class="hidden clearfix">
+<nav id=TableOfContents></nav>
+</aside>
+</header>
+<article class=markdown>
+<html>
+<head>
+<style>h1{background:#c2edff;padding:.5em}h2{padding:.25em .5em;color:#494949;background:0 0;border-left:solid 5px #7db4e6}table.normal{border-collapse:collapse;border:1px solid gray;font-size:80%}table.normal th,table.normal td{border:1px solid gray}code{font-size:80%;display:inline-block;padding:.1em .25em;color:#444;background-color:#e7edf3;border-radius:3px;border:solid 1px #d6dde4}</style>
+</head>
+<body>
+<div id=content>
+<h1>Model Report</h1>
+<h2>sm_vac</h2>
+<img src=sm_vac.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vaccine</td>
+<td><a href=#sm_vac_start>start</a></td>
+<td><a href=#sm_vac_vaccine>vaccine</a></td>
+<td>vaccine</td>
+<td><a href=#vaccine>vaccine</a></td>
+</tr>
+<tr>
+<td>placebo</td>
+<td><a href=#sm_vac_start>start</a></td>
+<td><a href=#sm_vac_placebo>placebo</a></td>
+<td>placebo</td>
+<td><a href=#placebo>placebo</a></td>
+</tr>
+<tr>
+<td>select_get_vac</td>
+<td><a href=#sm_vac_vaccine>vaccine</a></td>
+<td><a href=#sm_vac_select_get_vac>select_get_vac</a></td>
+<td>select_get_vac</td>
+<td><a href=#select_get_vac>select_get_vac</a></td>
+</tr>
+<tr>
+<td>select_get_vac</td>
+<td><a href=#sm_vac_placebo>placebo</a></td>
+<td><a href=#sm_vac_select_get_vac>select_get_vac</a></td>
+<td>select_get_vac</td>
+<td><a href=#select_get_vac>select_get_vac</a></td>
+</tr>
+<tr>
+<td>get_vac_0</td>
+<td><a href=#sm_vac_select_get_vac>select_get_vac</a></td>
+<td><a href=#sm_vac_get_vac_0>get_vac_0</a></td>
+<td>get_vac_0</td>
+<td><a href=#get_vac_0>get_vac_0</a></td>
+</tr>
+<tr>
+<td>get_vac_1</td>
+<td><a href=#sm_vac_select_get_vac>select_get_vac</a></td>
+<td><a href=#sm_vac_get_vac_1>get_vac_1</a></td>
+<td>get_vac_1</td>
+<td><a href=#get_vac_1>get_vac_1</a></td>
+</tr>
+<tr>
+<td>get_vac_2</td>
+<td><a href=#sm_vac_select_get_vac>select_get_vac</a></td>
+<td><a href=#sm_vac_get_vac_2>get_vac_2</a></td>
+<td>get_vac_2</td>
+<td><a href=#get_vac_2>get_vac_2</a></td>
+</tr>
+<tr>
+<td>init_end</td>
+<td><a href=#sm_vac_get_vac_0>get_vac_0</a></td>
+<td><a href=#sm_vac_init_end>init_end</a></td>
+<td>init_end</td>
+<td><a href=#init_end>init_end</a></td>
+</tr>
+<tr>
+<td>init_end</td>
+<td><a href=#sm_vac_get_vac_1>get_vac_1</a></td>
+<td><a href=#sm_vac_init_end>init_end</a></td>
+<td>init_end</td>
+<td><a href=#init_end>init_end</a></td>
+</tr>
+<tr>
+<td>init_end</td>
+<td><a href=#sm_vac_get_vac_2>get_vac_2</a></td>
+<td><a href=#sm_vac_init_end>init_end</a></td>
+<td>init_end</td>
+<td><a href=#init_end>init_end</a></td>
+</tr>
+<tr>
+<td>vac1_ready</td>
+<td><a href=#sm_vac_init_end>init_end</a></td>
+<td><a href=#sm_vac_vac1_ready>vac1_ready</a></td>
+<td>vac1_ready</td>
+<td><a href=#vac1_ready>vac1_ready</a></td>
+</tr>
+<tr>
+<td>vac0_out</td>
+<td><a href=#sm_vac_init_end>init_end</a></td>
+<td><a href=#sm_vac_vac0_out>vac0_out</a></td>
+<td>vac0_out</td>
+<td><a href=#vac0_out>vac0_out</a></td>
+</tr>
+<tr>
+<td>vac1_check</td>
+<td><a href=#sm_vac_vac1_ready>vac1_ready</a></td>
+<td><a href=#sm_vac_vac1_check>vac1_check</a></td>
+<td>(~((on_fever|on_PCR_positive)))</td>
+<td>(~((<a href=#on_fever>on_fever</a>|<a href=#on_PCR_positive>on_PCR_positive</a>)))</td>
+</tr>
+<tr>
+<td>vac1_req</td>
+<td><a href=#sm_vac_vac1_check>vac1_check</a></td>
+<td><a href=#sm_vac_vac1_req>vac1_req</a></td>
+<td>vac1_req</td>
+<td><a href=#vac1_req>vac1_req</a></td>
+</tr>
+<tr>
+<td>vac1_after</td>
+<td><a href=#sm_vac_vac1_req>vac1_req</a></td>
+<td><a href=#sm_vac_vac1_after>vac1_after</a></td>
+<td>vac1_timer</td>
+<td><a href=#vac1_timer>vac1_timer</a></td>
+</tr>
+<tr>
+<td>vac1_cancel</td>
+<td><a href=#sm_vac_vac1_req>vac1_req</a></td>
+<td><a href=#sm_vac_vac1_cancel>vac1_cancel</a></td>
+<td>(on_fever|on_PCR_positive)</td>
+<td>(<a href=#on_fever>on_fever</a>|<a href=#on_PCR_positive>on_PCR_positive</a>)</td>
+</tr>
+<tr>
+<td>vac2_ready</td>
+<td><a href=#sm_vac_vac1_after>vac1_after</a></td>
+<td><a href=#sm_vac_vac2_ready>vac2_ready</a></td>
+<td>vac2_ready</td>
+<td><a href=#vac2_ready>vac2_ready</a></td>
+</tr>
+<tr>
+<td>vac1_out</td>
+<td><a href=#sm_vac_vac1_after>vac1_after</a></td>
+<td><a href=#sm_vac_vac1_out>vac1_out</a></td>
+<td>vac1_out</td>
+<td><a href=#vac1_out>vac1_out</a></td>
+</tr>
+<tr>
+<td>vac1_reset</td>
+<td><a href=#sm_vac_vac1_cancel>vac1_cancel</a></td>
+<td><a href=#sm_vac_vac1_ready>vac1_ready</a></td>
+<td>(~((on_fever|on_PCR_positive)))</td>
+<td>(~((<a href=#on_fever>on_fever</a>|<a href=#on_PCR_positive>on_PCR_positive</a>)))</td>
+</tr>
+<tr>
+<td>vac2_check</td>
+<td><a href=#sm_vac_vac2_ready>vac2_ready</a></td>
+<td><a href=#sm_vac_vac2_check>vac2_check</a></td>
+<td>(~((on_fever|on_PCR_positive)))</td>
+<td>(~((<a href=#on_fever>on_fever</a>|<a href=#on_PCR_positive>on_PCR_positive</a>)))</td>
+</tr>
+<tr>
+<td>vac2_req</td>
+<td><a href=#sm_vac_vac2_check>vac2_check</a></td>
+<td><a href=#sm_vac_vac2_req>vac2_req</a></td>
+<td>vac2_req</td>
+<td><a href=#vac2_req>vac2_req</a></td>
+</tr>
+<tr>
+<td>vac2_after</td>
+<td><a href=#sm_vac_vac2_req>vac2_req</a></td>
+<td><a href=#sm_vac_vac2_after>vac2_after</a></td>
+<td>vac2_timer</td>
+<td><a href=#vac2_timer>vac2_timer</a></td>
+</tr>
+<tr>
+<td>vac2_cancel</td>
+<td><a href=#sm_vac_vac2_req>vac2_req</a></td>
+<td><a href=#sm_vac_vac2_cancel>vac2_cancel</a></td>
+<td>(on_fever|on_PCR_positive)</td>
+<td>(<a href=#on_fever>on_fever</a>|<a href=#on_PCR_positive>on_PCR_positive</a>)</td>
+</tr>
+<tr>
+<td>vac2_reset</td>
+<td><a href=#sm_vac_vac2_cancel>vac2_cancel</a></td>
+<td><a href=#sm_vac_vac2_ready>vac2_ready</a></td>
+<td>(~((on_fever|on_PCR_positive)))</td>
+<td>(~((<a href=#on_fever>on_fever</a>|<a href=#on_PCR_positive>on_PCR_positive</a>)))</td>
+</tr>
+</tbody>
+</table>
+<h2>sm_pcr</h2>
+<img src=sm_pcr.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>PCR_request</td>
+<td><a href=#sm_pcr_start>start</a></td>
+<td><a href=#sm_pcr_PCR_request>PCR_request</a></td>
+<td>(on_fever&pcr_request_not_received)</td>
+<td>(<a href=#on_fever>on_fever</a>&<a href=#pcr_request_not_received>pcr_request_not_received</a>)</td>
+</tr>
+<tr>
+<td>PCR_request_received</td>
+<td><a href=#sm_pcr_PCR_request>PCR_request</a></td>
+<td><a href=#sm_pcr_PCR_reception_branch>PCR_reception_branch</a></td>
+<td>PCR_request_received</td>
+<td><a href=#PCR_request_received>PCR_request_received</a></td>
+</tr>
+<tr>
+<td>PCR_accept</td>
+<td><a href=#sm_pcr_PCR_reception_branch>PCR_reception_branch</a></td>
+<td><a href=#sm_pcr_PCR_accept>PCR_accept</a></td>
+<td>PCR_accept</td>
+<td><a href=#PCR_accept>PCR_accept</a></td>
+</tr>
+<tr>
+<td>PCR_reject</td>
+<td><a href=#sm_pcr_PCR_reception_branch>PCR_reception_branch</a></td>
+<td><a href=#sm_pcr_start>start</a></td>
+<td>PCR_reject</td>
+<td><a href=#PCR_reject>PCR_reject</a></td>
+</tr>
+<tr>
+<td>PCR_check</td>
+<td><a href=#sm_pcr_PCR_accept>PCR_accept</a></td>
+<td><a href=#sm_pcr_PCR_check>PCR_check</a></td>
+<td>PCR_check</td>
+<td><a href=#PCR_check>PCR_check</a></td>
+</tr>
+<tr>
+<td>PCR_result</td>
+<td><a href=#sm_pcr_PCR_check>PCR_check</a></td>
+<td><a href=#sm_pcr_PCR_result>PCR_result</a></td>
+<td>PCR_result</td>
+<td><a href=#PCR_result>PCR_result</a></td>
+</tr>
+<tr>
+<td>PCR_positive</td>
+<td><a href=#sm_pcr_PCR_result>PCR_result</a></td>
+<td><a href=#sm_pcr_PCR_positive>PCR_positive</a></td>
+<td>PCR_positive</td>
+<td><a href=#PCR_positive>PCR_positive</a></td>
+</tr>
+<tr>
+<td>PCR_negative</td>
+<td><a href=#sm_pcr_PCR_result>PCR_result</a></td>
+<td><a href=#sm_pcr_start>start</a></td>
+<td>PCR_negative</td>
+<td><a href=#PCR_negative>PCR_negative</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vac1adv</h2>
+<img src=sm_vac1adv.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vac1adv_vac</td>
+<td><a href=#sm_vac1adv_start>start</a></td>
+<td><a href=#sm_vac1adv_vac1adv_vac>vac1adv_vac</a></td>
+<td>vac1</td>
+<td><a href=#vac1>vac1</a></td>
+</tr>
+<tr>
+<td>vac1adv_none_path</td>
+<td><a href=#sm_vac1adv_vac1adv_vac>vac1adv_vac</a></td>
+<td><a href=#sm_vac1adv_vac1adv_none_path>vac1adv_none_path</a></td>
+<td>vac1adv_none_path</td>
+<td><a href=#vac1adv_none_path>vac1adv_none_path</a></td>
+</tr>
+<tr>
+<td>vac1adv_fever_path</td>
+<td><a href=#sm_vac1adv_vac1adv_vac>vac1adv_vac</a></td>
+<td><a href=#sm_vac1adv_vac1adv_fever_path>vac1adv_fever_path</a></td>
+<td>vac1adv_fever_path</td>
+<td><a href=#vac1adv_fever_path>vac1adv_fever_path</a></td>
+</tr>
+<tr>
+<td>vac1adv_worse_path</td>
+<td><a href=#sm_vac1adv_vac1adv_vac>vac1adv_vac</a></td>
+<td><a href=#sm_vac1adv_vac1adv_worse_path>vac1adv_worse_path</a></td>
+<td>vac1adv_worse_path</td>
+<td><a href=#vac1adv_worse_path>vac1adv_worse_path</a></td>
+</tr>
+<tr>
+<td>vac1adv_none</td>
+<td><a href=#sm_vac1adv_vac1adv_none_path>vac1adv_none_path</a></td>
+<td><a href=#sm_vac1adv_vac1adv_none>vac1adv_none</a></td>
+<td>vac1adv_none</td>
+<td><a href=#vac1adv_none>vac1adv_none</a></td>
+</tr>
+<tr>
+<td>vac1adv_fever</td>
+<td><a href=#sm_vac1adv_vac1adv_fever_path>vac1adv_fever_path</a></td>
+<td><a href=#sm_vac1adv_vac1adv_fever>vac1adv_fever</a></td>
+<td>vac1adv_fever</td>
+<td><a href=#vac1adv_fever>vac1adv_fever</a></td>
+</tr>
+<tr>
+<td>vac1adv_fever_before_worse</td>
+<td><a href=#sm_vac1adv_vac1adv_worse_path>vac1adv_worse_path</a></td>
+<td><a href=#sm_vac1adv_vac1adv_fever_before_worse>vac1adv_fever_before_worse</a></td>
+<td>vac1adv_fever_before_worse</td>
+<td><a href=#vac1adv_fever_before_worse>vac1adv_fever_before_worse</a></td>
+</tr>
+<tr>
+<td>vac1adv_worse</td>
+<td><a href=#sm_vac1adv_vac1adv_fever_before_worse>vac1adv_fever_before_worse</a></td>
+<td><a href=#sm_vac1adv_vac1adv_worse>vac1adv_worse</a></td>
+<td>vac1adv_worse</td>
+<td><a href=#vac1adv_worse>vac1adv_worse</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vac2adv</h2>
+<img src=sm_vac2adv.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vac2adv_vac</td>
+<td><a href=#sm_vac2adv_start>start</a></td>
+<td><a href=#sm_vac2adv_vac2adv_vac>vac2adv_vac</a></td>
+<td>vac2</td>
+<td><a href=#vac2>vac2</a></td>
+</tr>
+<tr>
+<td>vac2adv_none_path</td>
+<td><a href=#sm_vac2adv_vac2adv_vac>vac2adv_vac</a></td>
+<td><a href=#sm_vac2adv_vac2adv_none_path>vac2adv_none_path</a></td>
+<td>vac2adv_none_path</td>
+<td><a href=#vac2adv_none_path>vac2adv_none_path</a></td>
+</tr>
+<tr>
+<td>vac2adv_fever_path</td>
+<td><a href=#sm_vac2adv_vac2adv_vac>vac2adv_vac</a></td>
+<td><a href=#sm_vac2adv_vac2adv_fever_path>vac2adv_fever_path</a></td>
+<td>vac2adv_fever_path</td>
+<td><a href=#vac2adv_fever_path>vac2adv_fever_path</a></td>
+</tr>
+<tr>
+<td>vac2adv_worse_path</td>
+<td><a href=#sm_vac2adv_vac2adv_vac>vac2adv_vac</a></td>
+<td><a href=#sm_vac2adv_vac2adv_worse_path>vac2adv_worse_path</a></td>
+<td>vac2adv_worse_path</td>
+<td><a href=#vac2adv_worse_path>vac2adv_worse_path</a></td>
+</tr>
+<tr>
+<td>vac2adv_none</td>
+<td><a href=#sm_vac2adv_vac2adv_none_path>vac2adv_none_path</a></td>
+<td><a href=#sm_vac2adv_vac2adv_none>vac2adv_none</a></td>
+<td>vac2adv_none</td>
+<td><a href=#vac2adv_none>vac2adv_none</a></td>
+</tr>
+<tr>
+<td>vac2adv_fever</td>
+<td><a href=#sm_vac2adv_vac2adv_fever_path>vac2adv_fever_path</a></td>
+<td><a href=#sm_vac2adv_vac2adv_fever>vac2adv_fever</a></td>
+<td>vac2adv_fever</td>
+<td><a href=#vac2adv_fever>vac2adv_fever</a></td>
+</tr>
+<tr>
+<td>vac2adv_fever_before_worse</td>
+<td><a href=#sm_vac2adv_vac2adv_worse_path>vac2adv_worse_path</a></td>
+<td><a href=#sm_vac2adv_vac2adv_fever_before_worse>vac2adv_fever_before_worse</a></td>
+<td>vac2adv_fever_before_worse</td>
+<td><a href=#vac2adv_fever_before_worse>vac2adv_fever_before_worse</a></td>
+</tr>
+<tr>
+<td>vac2adv_worse</td>
+<td><a href=#sm_vac2adv_vac2adv_fever_before_worse>vac2adv_fever_before_worse</a></td>
+<td><a href=#sm_vac2adv_vac2adv_worse>vac2adv_worse</a></td>
+<td>vac2adv_worse</td>
+<td><a href=#vac2adv_worse>vac2adv_worse</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vac1eff</h2>
+<img src=sm_vac1eff.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vac1eff_vac</td>
+<td><a href=#sm_vac1eff_start>start</a></td>
+<td><a href=#sm_vac1eff_vac1eff_vac>vac1eff_vac</a></td>
+<td>vac1</td>
+<td><a href=#vac1>vac1</a></td>
+</tr>
+<tr>
+<td>vac1eff_no_effect_path</td>
+<td><a href=#sm_vac1eff_vac1eff_vac>vac1eff_vac</a></td>
+<td><a href=#sm_vac1eff_vac1eff_no_effect_path>vac1eff_no_effect_path</a></td>
+<td>vac1eff_no_effect_path</td>
+<td><a href=#vac1eff_no_effect_path>vac1eff_no_effect_path</a></td>
+</tr>
+<tr>
+<td>vac1eff_effect_path</td>
+<td><a href=#sm_vac1eff_vac1eff_vac>vac1eff_vac</a></td>
+<td><a href=#sm_vac1eff_vac1eff_effect_path>vac1eff_effect_path</a></td>
+<td>vac1eff_effect_path</td>
+<td><a href=#vac1eff_effect_path>vac1eff_effect_path</a></td>
+</tr>
+<tr>
+<td>vac1eff_no_effect</td>
+<td><a href=#sm_vac1eff_vac1eff_no_effect_path>vac1eff_no_effect_path</a></td>
+<td><a href=#sm_vac1eff_vac1eff_no_effect>vac1eff_no_effect</a></td>
+<td>vac1eff_no_effect</td>
+<td><a href=#vac1eff_no_effect>vac1eff_no_effect</a></td>
+</tr>
+<tr>
+<td>vac1eff_effect</td>
+<td><a href=#sm_vac1eff_vac1eff_effect_path>vac1eff_effect_path</a></td>
+<td><a href=#sm_vac1eff_vac1eff_effect>vac1eff_effect</a></td>
+<td>vac1eff_effect</td>
+<td><a href=#vac1eff_effect>vac1eff_effect</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vac2eff</h2>
+<img src=sm_vac2eff.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vac2eff_vac</td>
+<td><a href=#sm_vac2eff_start>start</a></td>
+<td><a href=#sm_vac2eff_vac2eff_vac>vac2eff_vac</a></td>
+<td>vac2</td>
+<td><a href=#vac2>vac2</a></td>
+</tr>
+<tr>
+<td>vac2eff_no_effect_path</td>
+<td><a href=#sm_vac2eff_vac2eff_vac>vac2eff_vac</a></td>
+<td><a href=#sm_vac2eff_vac2eff_no_effect_path>vac2eff_no_effect_path</a></td>
+<td>vac2eff_no_effect_path</td>
+<td><a href=#vac2eff_no_effect_path>vac2eff_no_effect_path</a></td>
+</tr>
+<tr>
+<td>vac2eff_effect_path</td>
+<td><a href=#sm_vac2eff_vac2eff_vac>vac2eff_vac</a></td>
+<td><a href=#sm_vac2eff_vac2eff_effect_path>vac2eff_effect_path</a></td>
+<td>vac2eff_effect_path</td>
+<td><a href=#vac2eff_effect_path>vac2eff_effect_path</a></td>
+</tr>
+<tr>
+<td>vac2eff_no_effect</td>
+<td><a href=#sm_vac2eff_vac2eff_no_effect_path>vac2eff_no_effect_path</a></td>
+<td><a href=#sm_vac2eff_vac2eff_no_effect>vac2eff_no_effect</a></td>
+<td>vac2eff_no_effect</td>
+<td><a href=#vac2eff_no_effect>vac2eff_no_effect</a></td>
+</tr>
+<tr>
+<td>vac2eff_effect</td>
+<td><a href=#sm_vac2eff_vac2eff_effect_path>vac2eff_effect_path</a></td>
+<td><a href=#sm_vac2eff_vac2eff_effect>vac2eff_effect</a></td>
+<td>vac2eff_effect</td>
+<td><a href=#vac2eff_effect>vac2eff_effect</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_cold</h2>
+<img src=sm_cold.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>cold_not_cured</td>
+<td><a href=#sm_cold_start>start</a></td>
+<td><a href=#sm_cold_cold_change_branch>cold_change_branch</a></td>
+<td>cold_not_cured</td>
+<td><a href=#cold_not_cured>cold_not_cured</a></td>
+</tr>
+<tr>
+<td>cold_drop</td>
+<td><a href=#sm_cold_start>start</a></td>
+<td><a href=#sm_cold_drop>drop</a></td>
+<td>cold_drop</td>
+<td><a href=#cold_drop>cold_drop</a></td>
+</tr>
+<tr>
+<td>cold_cured</td>
+<td><a href=#sm_cold_start>start</a></td>
+<td><a href=#sm_cold_cold_cured>cold_cured</a></td>
+<td>cold_cured</td>
+<td><a href=#cold_cured>cold_cured</a></td>
+</tr>
+<tr>
+<td>cold_cure</td>
+<td><a href=#sm_cold_cold_change_branch>cold_change_branch</a></td>
+<td><a href=#sm_cold_cold_cure>cold_cure</a></td>
+<td>cold_cure</td>
+<td><a href=#cold_cure>cold_cure</a></td>
+</tr>
+<tr>
+<td>cold_worse</td>
+<td><a href=#sm_cold_cold_change_branch>cold_change_branch</a></td>
+<td><a href=#sm_cold_cold_worse>cold_worse</a></td>
+<td>cold_worse</td>
+<td><a href=#cold_worse>cold_worse</a></td>
+</tr>
+<tr>
+<td>infect_cold</td>
+<td><a href=#sm_cold_cold_cured>cold_cured</a></td>
+<td><a href=#sm_cold_cold_worse_end>cold_worse_end</a></td>
+<td>infect_cold</td>
+<td><a href=#infect_cold>infect_cold</a></td>
+</tr>
+<tr>
+<td>cold_cure_end</td>
+<td><a href=#sm_cold_cold_cure>cold_cure</a></td>
+<td><a href=#sm_cold_cold_cure_end>cold_cure_end</a></td>
+<td>cold_cure_end</td>
+<td><a href=#cold_cure_end>cold_cure_end</a></td>
+</tr>
+<tr>
+<td>cold_worse_end</td>
+<td><a href=#sm_cold_cold_worse>cold_worse</a></td>
+<td><a href=#sm_cold_cold_worse_end>cold_worse_end</a></td>
+<td>cold_worse_end</td>
+<td><a href=#cold_worse_end>cold_worse_end</a></td>
+</tr>
+<tr>
+<td>reset</td>
+<td>-</td>
+<td><a href=#sm_cold_start>start</a></td>
+<td>(+(cold_val_change))</td>
+<td>(+(<a href=#cold_val_change>cold_val_change</a>))</td>
+</tr>
+</tbody>
+</table>
+<h2>sm_vacadv</h2>
+<img src=sm_vacadv.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>vacadv_not_cured</td>
+<td><a href=#sm_vacadv_start>start</a></td>
+<td><a href=#sm_vacadv_vacadv_change_branch>vacadv_change_branch</a></td>
+<td>vacadv_not_cured</td>
+<td><a href=#vacadv_not_cured>vacadv_not_cured</a></td>
+</tr>
+<tr>
+<td>vacadv_drop</td>
+<td><a href=#sm_vacadv_start>start</a></td>
+<td><a href=#sm_vacadv_drop>drop</a></td>
+<td>vacadv_drop</td>
+<td><a href=#vacadv_drop>vacadv_drop</a></td>
+</tr>
+<tr>
+<td>vacadv_cured</td>
+<td><a href=#sm_vacadv_start>start</a></td>
+<td><a href=#sm_vacadv_vacadv_cured>vacadv_cured</a></td>
+<td>vacadv_cured</td>
+<td><a href=#vacadv_cured>vacadv_cured</a></td>
+</tr>
+<tr>
+<td>vacadv_cure</td>
+<td><a href=#sm_vacadv_vacadv_change_branch>vacadv_change_branch</a></td>
+<td><a href=#sm_vacadv_vacadv_cure>vacadv_cure</a></td>
+<td>vacadv_cure</td>
+<td><a href=#vacadv_cure>vacadv_cure</a></td>
+</tr>
+<tr>
+<td>vacadv_worse</td>
+<td><a href=#sm_vacadv_vacadv_change_branch>vacadv_change_branch</a></td>
+<td><a href=#sm_vacadv_vacadv_worse>vacadv_worse</a></td>
+<td>vacadv_worse</td>
+<td><a href=#vacadv_worse>vacadv_worse</a></td>
+</tr>
+<tr>
+<td>vacadv_cure_end</td>
+<td><a href=#sm_vacadv_vacadv_cure>vacadv_cure</a></td>
+<td><a href=#sm_vacadv_vacadv_cure_end>vacadv_cure_end</a></td>
+<td>vacadv_cure_end</td>
+<td><a href=#vacadv_cure_end>vacadv_cure_end</a></td>
+</tr>
+<tr>
+<td>vacadv_worse_end</td>
+<td><a href=#sm_vacadv_vacadv_worse>vacadv_worse</a></td>
+<td><a href=#sm_vacadv_vacadv_worse_end>vacadv_worse_end</a></td>
+<td>vacadv_worse_end</td>
+<td><a href=#vacadv_worse_end>vacadv_worse_end</a></td>
+</tr>
+<tr>
+<td>reset</td>
+<td>-</td>
+<td><a href=#sm_vacadv_start>start</a></td>
+<td>(+(vacadv_val_change))</td>
+<td>(+(<a href=#vacadv_val_change>vacadv_val_change</a>))</td>
+</tr>
+</tbody>
+</table>
+<h2>sm_c19</h2>
+<img src=sm_c19.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>c19_not_cured</td>
+<td><a href=#sm_c19_start>start</a></td>
+<td><a href=#sm_c19_c19_change_branch>c19_change_branch</a></td>
+<td>c19_not_cured</td>
+<td><a href=#c19_not_cured>c19_not_cured</a></td>
+</tr>
+<tr>
+<td>c19_drop</td>
+<td><a href=#sm_c19_start>start</a></td>
+<td><a href=#sm_c19_drop>drop</a></td>
+<td>c19_drop</td>
+<td><a href=#c19_drop>c19_drop</a></td>
+</tr>
+<tr>
+<td>c19_cured</td>
+<td><a href=#sm_c19_start>start</a></td>
+<td><a href=#sm_c19_c19_cured>c19_cured</a></td>
+<td>c19_cured</td>
+<td><a href=#c19_cured>c19_cured</a></td>
+</tr>
+<tr>
+<td>c19_cure</td>
+<td><a href=#sm_c19_c19_change_branch>c19_change_branch</a></td>
+<td><a href=#sm_c19_c19_cure>c19_cure</a></td>
+<td>c19_cure</td>
+<td><a href=#c19_cure>c19_cure</a></td>
+</tr>
+<tr>
+<td>c19_worse</td>
+<td><a href=#sm_c19_c19_change_branch>c19_change_branch</a></td>
+<td><a href=#sm_c19_c19_worse>c19_worse</a></td>
+<td>c19_worse</td>
+<td><a href=#c19_worse>c19_worse</a></td>
+</tr>
+<tr>
+<td>infect_c19</td>
+<td><a href=#sm_c19_c19_cured>c19_cured</a></td>
+<td><a href=#sm_c19_c19_worse_end>c19_worse_end</a></td>
+<td>infect_c19</td>
+<td><a href=#infect_c19>infect_c19</a></td>
+</tr>
+<tr>
+<td>c19_cure_end</td>
+<td><a href=#sm_c19_c19_cure>c19_cure</a></td>
+<td><a href=#sm_c19_c19_cure_end>c19_cure_end</a></td>
+<td>c19_cure_end</td>
+<td><a href=#c19_cure_end>c19_cure_end</a></td>
+</tr>
+<tr>
+<td>c19_worse_end</td>
+<td><a href=#sm_c19_c19_worse>c19_worse</a></td>
+<td><a href=#sm_c19_c19_worse_end>c19_worse_end</a></td>
+<td>c19_worse_end</td>
+<td><a href=#c19_worse_end>c19_worse_end</a></td>
+</tr>
+<tr>
+<td>reset</td>
+<td>-</td>
+<td><a href=#sm_c19_start>start</a></td>
+<td>(+(c19_val_change))</td>
+<td>(+(<a href=#c19_val_change>c19_val_change</a>))</td>
+</tr>
+</tbody>
+</table>
+<h2>sm_sick</h2>
+<img src=sm_sick.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>sick_not_cured</td>
+<td><a href=#sm_sick_start>start</a></td>
+<td><a href=#sm_sick_sick_change_branch>sick_change_branch</a></td>
+<td>sick_not_cured</td>
+<td><a href=#sick_not_cured>sick_not_cured</a></td>
+</tr>
+<tr>
+<td>sick_drop</td>
+<td><a href=#sm_sick_start>start</a></td>
+<td><a href=#sm_sick_drop>drop</a></td>
+<td>sick_drop</td>
+<td><a href=#sick_drop>sick_drop</a></td>
+</tr>
+<tr>
+<td>sick_cured</td>
+<td><a href=#sm_sick_start>start</a></td>
+<td><a href=#sm_sick_sick_cured>sick_cured</a></td>
+<td>sick_cured</td>
+<td><a href=#sick_cured>sick_cured</a></td>
+</tr>
+<tr>
+<td>sick_cure</td>
+<td><a href=#sm_sick_sick_change_branch>sick_change_branch</a></td>
+<td><a href=#sm_sick_sick_cure>sick_cure</a></td>
+<td>sick_cure</td>
+<td><a href=#sick_cure>sick_cure</a></td>
+</tr>
+<tr>
+<td>sick_worse</td>
+<td><a href=#sm_sick_sick_change_branch>sick_change_branch</a></td>
+<td><a href=#sm_sick_sick_worse>sick_worse</a></td>
+<td>sick_worse</td>
+<td><a href=#sick_worse>sick_worse</a></td>
+</tr>
+<tr>
+<td>sick_cure_end</td>
+<td><a href=#sm_sick_sick_cure>sick_cure</a></td>
+<td><a href=#sm_sick_sick_cure_end>sick_cure_end</a></td>
+<td>sick_cure_end</td>
+<td><a href=#sick_cure_end>sick_cure_end</a></td>
+</tr>
+<tr>
+<td>sick_worse_end</td>
+<td><a href=#sm_sick_sick_worse>sick_worse</a></td>
+<td><a href=#sm_sick_sick_worse_end>sick_worse_end</a></td>
+<td>sick_worse_end</td>
+<td><a href=#sick_worse_end>sick_worse_end</a></td>
+</tr>
+<tr>
+<td>reset</td>
+<td>-</td>
+<td><a href=#sm_sick_start>start</a></td>
+<td>(+(sick_val_change))</td>
+<td>(+(<a href=#sick_val_change>sick_val_change</a>))</td>
+</tr>
+</tbody>
+</table>
+<h2>sm_feversum</h2>
+<img src=sm_feversum.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>feversum_up_to_0</td>
+<td><a href=#sm_feversum_start>start</a></td>
+<td><a href=#sm_feversum_feversum_0>feversum_0</a></td>
+<td>feversum_up_to_0</td>
+<td><a href=#feversum_up_to_0>feversum_up_to_0</a></td>
+</tr>
+<tr>
+<td>feversum_up_to_1</td>
+<td><a href=#sm_feversum_feversum_0>feversum_0</a></td>
+<td><a href=#sm_feversum_feversum_1>feversum_1</a></td>
+<td>feversum_up_to_1</td>
+<td><a href=#feversum_up_to_1>feversum_up_to_1</a></td>
+</tr>
+<tr>
+<td>feversum_down_to_0</td>
+<td><a href=#sm_feversum_feversum_1>feversum_1</a></td>
+<td><a href=#sm_feversum_feversum_0>feversum_0</a></td>
+<td>feversum_down_to_0</td>
+<td><a href=#feversum_down_to_0>feversum_down_to_0</a></td>
+</tr>
+<tr>
+<td>feversum_up_to_2</td>
+<td><a href=#sm_feversum_feversum_1>feversum_1</a></td>
+<td><a href=#sm_feversum_feversum_2>feversum_2</a></td>
+<td>feversum_up_to_2</td>
+<td><a href=#feversum_up_to_2>feversum_up_to_2</a></td>
+</tr>
+<tr>
+<td>feversum_down_to_1</td>
+<td><a href=#sm_feversum_feversum_2>feversum_2</a></td>
+<td><a href=#sm_feversum_feversum_1>feversum_1</a></td>
+<td>feversum_down_to_1</td>
+<td><a href=#feversum_down_to_1>feversum_down_to_1</a></td>
+</tr>
+</tbody>
+</table>
+<h2>sm_sicksum</h2>
+<img src=sm_sicksum.jpg>
+<table class=normal>
+<tbody>
+<tr>
+<th>trigger</th>
+<th>state (from)</th>
+<th>state (to)</th>
+<th>event name</th>
+<th>event formula</th>
+</tr>
+<tr>
+<td>sicksum_up_to_0</td>
+<td><a href=#sm_sicksum_start>start</a></td>
+<td><a href=#sm_sicksum_sicksum_0>sicksum_0</a></td>
+<td>sicksum_up_to_0</td>
+<td><a href=#sicksum_up_to_0>sicksum_up_to_0</a></td>
+</tr>
+<tr>
+<td>sicksum_up_to_1</td>
+<td><a href=#sm_sicksum_sicksum_0>sicksum_0</a></td>
+<td><a href=#sm_sicksum_sicksum_1>sicksum_1</a></td>
+<td>sicksum_up_to_1</td>
+<td><a href=#sicksum_up_to_1>sicksum_up_to_1</a></td>
+</tr>
+<tr>
+<td>sicksum_down_to_0</td>
+<td><a href=#sm_sicksum_sicksum_1>sicksum_1</a></td>
+<td><a href=#sm_sicksum_sicksum_0>sicksum_0</a></td>
+<td>sicksum_down_to_0</td>
+<td><a href=#sicksum_down_to_0>sicksum_down_to_0</a></td>
+</tr>
+<tr>
+<td>sicksum_up_to_2</td>
+<td><a href=#sm_sicksum_sicksum_1>sicksum_1</a></td>
+<td><a href=#sm_sicksum_sicksum_2>sicksum_2</a></td>
+<td>sicksum_up_to_2</td>
+<td><a href=#sicksum_up_to_2>sicksum_up_to_2</a></td>
+</tr>
+<tr>
+<td>sicksum_down_to_1</td>
+<td><a href=#sm_sicksum_sicksum_2>sicksum_2</a></td>
+<td><a href=#sm_sicksum_sicksum_1>sicksum_1</a></td>
+<td>sicksum_down_to_1</td>
+<td><a href=#sicksum_down_to_1>sicksum_down_to_1</a></td>
+</tr>
+<tr>
+<td>sicksum_up_to_3</td>
+<td><a href=#sm_sicksum_sicksum_2>sicksum_2</a></td>
+<td><a href=#sm_sicksum_sicksum_3>sicksum_3</a></td>
+<td>sicksum_up_to_3</td>
+<td><a href=#sicksum_up_to_3>sicksum_up_to_3</a></td>
+</tr>
+<tr>
+<td>sicksum_down_to_2</td>
+<td><a href=#sm_sicksum_sicksum_3>sicksum_3</a></td>
+<td><a href=#sm_sicksum_sicksum_2>sicksum_2</a></td>
+<td>sicksum_down_to_2</td>
+<td><a href=#sicksum_down_to_2>sicksum_down_to_2</a></td>
+</tr>
+<tr>
+<td>sicksum_up_to_4</td>
+<td><a href=#sm_sicksum_sicksum_3>sicksum_3</a></td>
+<td><a href=#sm_sicksum_sicksum_4>sicksum_4</a></td>
+<td>sicksum_up_to_4</td>
+<td><a href=#sicksum_up_to_4>sicksum_up_to_4</a></td>
+</tr>
+<tr>
+<td>sicksum_down_to_3</td>
+<td><a href=#sm_sicksum_sicksum_4>sicksum_4</a></td>
+<td><a href=#sm_sicksum_sicksum_3>sicksum_3</a></td>
+<td>sicksum_down_to_3</td>
+<td><a href=#sicksum_down_to_3>sicksum_down_to_3</a></td>
+</tr>
+<tr>
+<td>sicksum_up_to_5</td>
+<td><a href=#sm_sicksum_sicksum_4>sicksum_4</a></td>
+<td><a href=#sm_sicksum_sicksum_5>sicksum_5</a></td>
+<td>sicksum_up_to_5</td>
+<td><a href=#sicksum_up_to_5>sicksum_up_to_5</a></td>
+</tr>
+<tr>
+<td>sicksum_down_to_4</td>
+<td><a href=#sm_sicksum_sicksum_5>sicksum_5</a></td>
+<td><a href=#sm_sicksum_sicksum_4>sicksum_4</a></td>
+<td>sicksum_down_to_4</td>
+<td><a href=#sicksum_down_to_4>sicksum_down_to_4</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Event</h2>
+<table class=normal>
+<tbody>
+<tr>
+<th>event name</th>
+<th>event type</th>
+<th>event info</th>
+</tr>
+<tr>
+<td><div id=feversum_up_to_0>feversum_up_to_0</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=-1: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=-1</code></p></td>
+</tr>
+<tr>
+<td><div id=feversum_up_to_1>feversum_up_to_1</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=1</code></p></td>
+</tr>
+<tr>
+<td><div id=feversum_down_to_0>feversum_down_to_0</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=1</code></p></td>
+</tr>
+<tr>
+<td><div id=feversum_up_to_2>feversum_up_to_2</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=2</code></p></td>
+</tr>
+<tr>
+<td><div id=feversum_down_to_1>feversum_down_to_1</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=2</code></p></td>
+</tr>
+<tr>
+<td><div id=on_fever>on_fever</div></td>
+<td>StateEvent</td>
+<td>state=feversum_2</td>
+</tr>
+<tr>
+<td><div id=sicksum_up_to_0>sicksum_up_to_0</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=-1: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=-1</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_up_to_1>sicksum_up_to_1</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=1</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_down_to_0>sicksum_down_to_0</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=1</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_up_to_2>sicksum_up_to_2</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=2</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_down_to_1>sicksum_down_to_1</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=2</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_up_to_3>sicksum_up_to_3</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=3</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_down_to_2>sicksum_down_to_2</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=3</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_up_to_4>sicksum_up_to_4</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=4</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_down_to_3>sicksum_down_to_3</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=4</code></p></td>
+</tr>
+<tr>
+<td><div id=PCR_request_received>PCR_request_received</div></td>
+<td>DummyEvent</td>
+<td></td>
+</tr>
+<tr>
+<td><div id=PCR_accept>PCR_accept</div></td>
+<td>RandomEventChild</td>
+<td>parent=PCR_reception_branch, parent start_state=PCR_reception_branch</td>
+</tr>
+<tr>
+<td><div id=vac1_ready>vac1_ready</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, vac_i=vac_i: parameter["vac_get"] > vac_i,
+</code></p><p>default parameter</br><code>vac_i=0</code></p></td>
+</tr>
+<tr>
+<td><div id=PCR_reject>PCR_reject</div></td>
+<td>RandomEventChild</td>
+<td>parent=PCR_reception_branch, parent start_state=PCR_reception_branch</td>
+</tr>
+<tr>
+<td><div id=vac0_out>vac0_out</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, vac_i=vac_i: parameter["vac_get"] <= vac_i,
+</code></p><p>default parameter</br><code>vac_i=0</code></p></td>
+</tr>
+<tr>
+<td><div id=PCR_check>PCR_check</div></td>
+<td>TimerEvent</td>
+<td>start_state=PCR_request<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_pcr, ev_name=PCR_check</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2adv_none_path>vac2adv_none_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2adv_vac_branch, parent start_state=vac2adv_vac</td>
+</tr>
+<tr>
+<td><div id=PCR_result>PCR_result</div></td>
+<td>TimerEvent</td>
+<td>start_state=PCR_check<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev5_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_pcr, ev_name=PCR_result</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2adv_fever_path>vac2adv_fever_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2adv_vac_branch, parent start_state=vac2adv_vac</td>
+</tr>
+<tr>
+<td><div id=sicksum_up_to_5>sicksum_up_to_5</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=5</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2adv_worse_path>vac2adv_worse_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2adv_vac_branch, parent start_state=vac2adv_vac</td>
+</tr>
+<tr>
+<td><div id=vac1_req>vac1_req</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1_ready<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac, ev_name=vac1_req</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2adv_none>vac2adv_none</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2adv_none_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, ev_name=vac2adv_none</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2adv_fever>vac2adv_fever</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2adv_fever_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, ev_name=vac2adv_fever</code></p></td>
+</tr>
+<tr>
+<td><div id=sicksum_down_to_4>sicksum_down_to_4</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, level=level: self.calc_sick_value(
+parameter, self.sick_list
+)
+</code></p><p>default parameter</br><code>level=5</code></p></td>
+</tr>
+<tr>
+<td><div id=pcr_request_not_received>pcr_request_not_received</div></td>
+<td>ParameterEvent</td>
+<td>name=pcr_request_received, value=False</td>
+</tr>
+<tr>
+<td><div id=PCR_positive>PCR_positive</div></td>
+<td>RandomEventChild</td>
+<td>parent=PCR_result_branch, parent start_state=PCR_check</td>
+</tr>
+<tr>
+<td><div id=PCR_negative>PCR_negative</div></td>
+<td>RandomEventChild</td>
+<td>parent=PCR_result_branch, parent start_state=PCR_check</td>
+</tr>
+<tr>
+<td><div id=vac2adv_fever_before_worse>vac2adv_fever_before_worse</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2adv_worse_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4c_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, ev_name=vac2adv_fever_before_worse</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1>vac1</div></td>
+<td>StateEvent</td>
+<td>state=vac1_after</td>
+</tr>
+<tr>
+<td><div id=on_PCR_positive>on_PCR_positive</div></td>
+<td>StateEvent</td>
+<td>state=PCR_positive</td>
+</tr>
+<tr>
+<td><div id=vac2adv_worse>vac2adv_worse</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2adv_fever_before_worse<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev5c_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, ev_name=vac2adv_worse</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1_timer>vac1_timer</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1_req<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac, ev_name=vac1</code></p></td>
+</tr>
+<tr>
+<td><div id=c19_cure_end>c19_cure_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=c19_cure<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_c19, ev_name=c19_cure_end</code></p></td>
+</tr>
+<tr>
+<td><div id=c19_worse_end>c19_worse_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=c19_worse<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_c19, ev_name=c19_worse_end</code></p></td>
+</tr>
+<tr>
+<td><div id=cold_cure_end>cold_cure_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=cold_cure<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_cold, ev_name=cold_cure_end</code></p></td>
+</tr>
+<tr>
+<td><div id=cold_worse_end>cold_worse_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=cold_worse<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_cold, ev_name=cold_worse_end</code></p></td>
+</tr>
+<tr>
+<td><div id=c19_not_cured>c19_not_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=c19_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=cold_not_cured>cold_not_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=cold_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=c19_drop>c19_drop</div></td>
+<td>RandomEventChild</td>
+<td>parent=c19_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=c19_cured>c19_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=c19_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=c19_cure>c19_cure</div></td>
+<td>RandomEventChild</td>
+<td>parent=c19_change_branch, parent start_state=c19_change_branch</td>
+</tr>
+<tr>
+<td><div id=cold_drop>cold_drop</div></td>
+<td>RandomEventChild</td>
+<td>parent=cold_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=cold_cured>cold_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=cold_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=c19_worse>c19_worse</div></td>
+<td>RandomEventChild</td>
+<td>parent=c19_change_branch, parent start_state=c19_change_branch</td>
+</tr>
+<tr>
+<td><div id=cold_cure>cold_cure</div></td>
+<td>RandomEventChild</td>
+<td>parent=cold_change_branch, parent start_state=cold_change_branch</td>
+</tr>
+<tr>
+<td><div id=c19_val_change>c19_val_change</div></td>
+<td>ParameterEvent</td>
+<td>name=c19_val (change)</td>
+</tr>
+<tr>
+<td><div id=cold_worse>cold_worse</div></td>
+<td>RandomEventChild</td>
+<td>parent=cold_change_branch, parent start_state=cold_change_branch</td>
+</tr>
+<tr>
+<td><div id=cold_val_change>cold_val_change</div></td>
+<td>ParameterEvent</td>
+<td>name=cold_val (change)</td>
+</tr>
+<tr>
+<td><div id=infect_c19>infect_c19</div></td>
+<td>StochasticEvent</td>
+<td>start_state=c19_cured<p>function</br><code> probability_func=lambda current_time, parameter, sm_name="sm_c19", ev_name="infect_c19": hpm.prob_cause(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_c19, ev_name=infect_c19</code></p></td>
+</tr>
+<tr>
+<td><div id=infect_cold>infect_cold</div></td>
+<td>StochasticEvent</td>
+<td>start_state=cold_cured<p>function</br><code> probability_func=lambda current_time, parameter, sm_name="sm_cold", ev_name="infect_cold": hpm.prob_cause(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_cold, ev_name=infect_cold</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2_ready>vac2_ready</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, vac_i=vac_i: parameter["vac_get"] > vac_i,
+</code></p><p>default parameter</br><code>vac_i=1</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1_out>vac1_out</div></td>
+<td>ParameterEvent</td>
+<td><p>function</br><code> lambda parameter, vac_i=vac_i: parameter["vac_get"] <= vac_i,
+</code></p><p>default parameter</br><code>vac_i=1</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1eff_no_effect_path>vac1eff_no_effect_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1eff_vac_branch, parent start_state=vac1eff_vac</td>
+</tr>
+<tr>
+<td><div id=vac1eff_effect_path>vac1eff_effect_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1eff_vac_branch, parent start_state=vac1eff_vac</td>
+</tr>
+<tr>
+<td><div id=vac2_req>vac2_req</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2_ready<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac, ev_name=vac2_req</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1adv_none_path>vac1adv_none_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1adv_vac_branch, parent start_state=vac1adv_vac</td>
+</tr>
+<tr>
+<td><div id=vac1eff_no_effect>vac1eff_no_effect</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1eff_no_effect_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac1eff, ev_name=vac1eff_no_effect</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1adv_fever_path>vac1adv_fever_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1adv_vac_branch, parent start_state=vac1adv_vac</td>
+</tr>
+<tr>
+<td><div id=vac1eff_effect>vac1eff_effect</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1eff_effect_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac1eff, ev_name=vac1eff_effect</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1adv_worse_path>vac1adv_worse_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac1adv_vac_branch, parent start_state=vac1adv_vac</td>
+</tr>
+<tr>
+<td><div id=vac1adv_none>vac1adv_none</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1adv_none_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, ev_name=vac1adv_none</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1adv_fever>vac1adv_fever</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1adv_fever_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, ev_name=vac1adv_fever</code></p></td>
+</tr>
+<tr>
+<td><div id=vac2>vac2</div></td>
+<td>StateEvent</td>
+<td>state=vac2_after</td>
+</tr>
+<tr>
+<td><div id=vac2_timer>vac2_timer</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2_req<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac, ev_name=vac2</code></p></td>
+</tr>
+<tr>
+<td><div id=vac1adv_fever_before_worse>vac1adv_fever_before_worse</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1adv_worse_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4c_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, ev_name=vac1adv_fever_before_worse</code></p></td>
+</tr>
+<tr>
+<td><div id=placebo>placebo</div></td>
+<td>RandomEventChild</td>
+<td>parent=type_vac_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=vac1adv_worse>vac1adv_worse</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac1adv_fever_before_worse<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev5c_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, ev_name=vac1adv_worse</code></p></td>
+</tr>
+<tr>
+<td><div id=select_get_vac>select_get_vac</div></td>
+<td>DummyEvent</td>
+<td></td>
+</tr>
+<tr>
+<td><div id=get_vac_0>get_vac_0</div></td>
+<td>RandomEventChild</td>
+<td>parent=get_vac_branch, parent start_state=select_get_vac</td>
+</tr>
+<tr>
+<td><div id=sick_cure_end>sick_cure_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=sick_cure<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_sick, ev_name=sick_cure_end</code></p></td>
+</tr>
+<tr>
+<td><div id=sick_worse_end>sick_worse_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=sick_worse<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_sick, ev_name=sick_worse_end</code></p></td>
+</tr>
+<tr>
+<td><div id=vaccine>vaccine</div></td>
+<td>RandomEventChild</td>
+<td>parent=type_vac_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=get_vac_1>get_vac_1</div></td>
+<td>RandomEventChild</td>
+<td>parent=get_vac_branch, parent start_state=select_get_vac</td>
+</tr>
+<tr>
+<td><div id=vacadv_cure_end>vacadv_cure_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=vacadv_cure<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vacadv, ev_name=vacadv_cure_end</code></p></td>
+</tr>
+<tr>
+<td><div id=vacadv_worse_end>vacadv_worse_end</div></td>
+<td>TimerEvent</td>
+<td>start_state=vacadv_worse<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev3b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vacadv, ev_name=vacadv_worse_end</code></p></td>
+</tr>
+<tr>
+<td><div id=sick_not_cured>sick_not_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=sick_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=get_vac_2>get_vac_2</div></td>
+<td>RandomEventChild</td>
+<td>parent=get_vac_branch, parent start_state=select_get_vac</td>
+</tr>
+<tr>
+<td><div id=vacadv_not_cured>vacadv_not_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=vacadv_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=sick_drop>sick_drop</div></td>
+<td>RandomEventChild</td>
+<td>parent=sick_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=sick_cured>sick_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=sick_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=init_end>init_end</div></td>
+<td>DummyEvent</td>
+<td></td>
+</tr>
+<tr>
+<td><div id=vac2eff_no_effect_path>vac2eff_no_effect_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2eff_vac_branch, parent start_state=vac2eff_vac</td>
+</tr>
+<tr>
+<td><div id=vacadv_drop>vacadv_drop</div></td>
+<td>RandomEventChild</td>
+<td>parent=vacadv_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=sick_cure>sick_cure</div></td>
+<td>RandomEventChild</td>
+<td>parent=sick_change_branch, parent start_state=sick_change_branch</td>
+</tr>
+<tr>
+<td><div id=vac2eff_effect_path>vac2eff_effect_path</div></td>
+<td>RandomEventChild</td>
+<td>parent=vac2eff_vac_branch, parent start_state=vac2eff_vac</td>
+</tr>
+<tr>
+<td><div id=vacadv_cured>vacadv_cured</div></td>
+<td>RandomEventChild</td>
+<td>parent=vacadv_drop_branch, parent start_state=start</td>
+</tr>
+<tr>
+<td><div id=sick_worse>sick_worse</div></td>
+<td>RandomEventChild</td>
+<td>parent=sick_change_branch, parent start_state=sick_change_branch</td>
+</tr>
+<tr>
+<td><div id=sick_val_change>sick_val_change</div></td>
+<td>ParameterEvent</td>
+<td>name=sick_val (change)</td>
+</tr>
+<tr>
+<td><div id=vac2eff_no_effect>vac2eff_no_effect</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2eff_no_effect_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4a_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac2eff, ev_name=vac2eff_no_effect</code></p></td>
+</tr>
+<tr>
+<td><div id=vacadv_cure>vacadv_cure</div></td>
+<td>RandomEventChild</td>
+<td>parent=vacadv_change_branch, parent start_state=vacadv_change_branch</td>
+</tr>
+<tr>
+<td><div id=vac2eff_effect>vac2eff_effect</div></td>
+<td>TimerEvent</td>
+<td>start_state=vac2eff_effect_path<p>function</br><code> interval=lambda current_time, parameter, sm_name=self.name, ev_name=ev4b_name: self.parameter_model.timer_interval(
+sm_name, ev_name, current_time, parameter
+),
+</code></p><p>default parameter</br><code>sm_name=sm_vac2eff, ev_name=vac2eff_effect</code></p></td>
+</tr>
+<tr>
+<td><div id=vacadv_worse>vacadv_worse</div></td>
+<td>RandomEventChild</td>
+<td>parent=vacadv_change_branch, parent start_state=vacadv_change_branch</td>
+</tr>
+<tr>
+<td><div id=vacadv_val_change>vacadv_val_change</div></td>
+<td>ParameterEvent</td>
+<td>name=vacadv_val (change)</td>
+</tr>
+</tbody>
+</table>
+<h2>State</h2>
+<table class=normal>
+<tbody>
+<tr>
+<th>state machine</th>
+<th>state name</th>
+<th>state info and update parameter func</th>
+</tr>
+<tr>
+<td>sm_feversum</td>
+<td><div id=sm_feversum_feversum_0>feversum_0</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=feversum, state_name=feversum_0, val=0</code></p></td>
+</tr>
+<tr>
+<td>sm_feversum</td>
+<td><div id=sm_feversum_feversum_0>feversum_0</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_feversum", state_name="feversum_0": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_feversum, state_name=feversum_0</code></p></td>
+</tr>
+<tr>
+<td>sm_feversum</td>
+<td><div id=sm_feversum_feversum_1>feversum_1</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=feversum, state_name=feversum_1, val=1</code></p></td>
+</tr>
+<tr>
+<td>sm_feversum</td>
+<td><div id=sm_feversum_feversum_2>feversum_2</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=feversum, state_name=feversum_2, val=2</code></p></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_sicksum_0>sicksum_0</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=sicksum, state_name=sicksum_0, val=0</code></p></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_sicksum_1>sicksum_1</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=sicksum, state_name=sicksum_1, val=1</code></p></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_sicksum_2>sicksum_2</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=sicksum, state_name=sicksum_2, val=2</code></p></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_sicksum_3>sicksum_3</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=sicksum, state_name=sicksum_3, val=3</code></p></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_sicksum_4>sicksum_4</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=sicksum, state_name=sicksum_4, val=4</code></p></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_PCR_result>PCR_result</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_fever_path>vac2adv_fever_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_start>start</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_ready>vac1_ready</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_PCR_positive>PCR_positive</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_worse_path>vac2adv_worse_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac0_out>vac0_out</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_none>vac2adv_none</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2adv", state_name="vac2adv_none": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, state_name=vac2adv_none</code></p></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_start>start</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_check>vac1_check</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_fever>vac2adv_fever</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2adv", state_name="vac2adv_fever": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, state_name=vac2adv_fever</code></p></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_req>vac1_req</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_fever_before_worse>vac2adv_fever_before_worse</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2adv", state_name="vac2adv_fever_before_worse": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, state_name=vac2adv_fever_before_worse</code></p></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_c19_change_branch>c19_change_branch</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_after>vac1_after</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_worse>vac2adv_worse</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2adv", state_name="vac2adv_worse": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, state_name=vac2adv_worse</code></p></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_cold_change_branch>cold_change_branch</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_cancel>vac1_cancel</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_c19_cured>c19_cured</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_sicksum</td>
+<td><div id=sm_sicksum_sicksum_5>sicksum_5</div></td>
+<td><p>function</br><code> lambda current_time, parameter, prefix=self.prefix, state_name=state_name2, val=level: set_parameter(
+prefix, state_name, val, current_time, parameter
+)
+</code></p><p>default parameter</br><code>prefix=sicksum, state_name=sicksum_5, val=5</code></p></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_cold_cured>cold_cured</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_c19_cure>c19_cure</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_cold_cure>cold_cure</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_c19_worse>c19_worse</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_cold_worse>cold_worse</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_c19_cure_end>c19_cure_end</div></td>
+<td><p>function</br><code> def cure_update_val(current_time, parameter):
+parameter[self.val_name] -= 1
+parameter[self.curing_status_name] = True
+</code></p></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_cold_cure_end>cold_cure_end</div></td>
+<td><p>function</br><code> def cure_update_val(current_time, parameter):
+parameter[self.val_name] -= 1
+parameter[self.curing_status_name] = True
+</code></p></td>
+</tr>
+<tr>
+<td>sm_c19</td>
+<td><div id=sm_c19_c19_worse_end>c19_worse_end</div></td>
+<td><p>function</br><code> def worse_update_val(current_time, parameter):
+parameter[self.val_name] += 1
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_cold</td>
+<td><div id=sm_cold_cold_worse_end>cold_worse_end</div></td>
+<td><p>function</br><code> def worse_update_val(current_time, parameter):
+parameter[self.val_name] += 1
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_PCR_accept>PCR_accept</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_PCR_check>PCR_check</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac2_ready>vac2_ready</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_vac>vac1adv_vac</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1adv", state_name="vac1adv_vac": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, state_name=vac1adv_vac</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_vac1eff_vac>vac1eff_vac</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_none_path>vac1adv_none_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac1_out>vac1_out</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_vac1eff_no_effect_path>vac1eff_no_effect_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_fever_path>vac1adv_fever_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac2_check>vac2_check</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_vac1eff_effect_path>vac1eff_effect_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_worse_path>vac1adv_worse_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac2_req>vac2_req</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac2_after>vac2_after</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_none>vac1adv_none</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1adv", state_name="vac1adv_none": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, state_name=vac1adv_none</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_vac1eff_no_effect>vac1eff_no_effect</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1eff", state_name="vac1eff_no_effect": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1eff, state_name=vac1eff_no_effect</code></p></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_start>start</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vac2_cancel>vac2_cancel</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_fever>vac1adv_fever</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1adv", state_name="vac1adv_fever": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, state_name=vac1adv_fever</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1eff</td>
+<td><div id=sm_vac1eff_vac1eff_effect>vac1eff_effect</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1eff", state_name="vac1eff_effect": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1eff, state_name=vac1eff_effect</code></p></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_fever_before_worse>vac1adv_fever_before_worse</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1adv", state_name="vac1adv_fever_before_worse": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, state_name=vac1adv_fever_before_worse</code></p></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_start>start</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac1adv</td>
+<td><div id=sm_vac1adv_vac1adv_worse>vac1adv_worse</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac1adv", state_name="vac1adv_worse": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac1adv, state_name=vac1adv_worse</code></p></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_sick_change_branch>sick_change_branch</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_vacadv_change_branch>vacadv_change_branch</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_sick_cured>sick_cured</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_vacadv_cured>vacadv_cured</div></td>
+<td><p>function</br><code> def correct_irregular_val(current_time, parameter):
+val = parameter[self.val_name]
+if val < 0:
+val = 0
+parameter[self.status_name] = self.state_name_list[val]
+parameter[self.val_name] = val
+if val == 0:
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_sick_cure>sick_cure</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_vacadv_cure>vacadv_cure</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_sick_worse>sick_worse</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_vacadv_worse>vacadv_worse</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_sick_cure_end>sick_cure_end</div></td>
+<td><p>function</br><code> def cure_update_val(current_time, parameter):
+parameter[self.val_name] -= 1
+parameter[self.curing_status_name] = True
+</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_placebo>placebo</div></td>
+<td><p>function</br><code> lambda current_time, parameter, vac_type=vac_type: self.set_vac_type(
+vac_type, current_time, parameter
+)
+</code></p><p>default parameter</br><code>vac_type=placebo</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_vacadv_cure_end>vacadv_cure_end</div></td>
+<td><p>function</br><code> def cure_update_val(current_time, parameter):
+parameter[self.val_name] -= 1
+parameter[self.curing_status_name] = True
+</code></p></td>
+</tr>
+<tr>
+<td>sm_sick</td>
+<td><div id=sm_sick_sick_worse_end>sick_worse_end</div></td>
+<td><p>function</br><code> def worse_update_val(current_time, parameter):
+parameter[self.val_name] += 1
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vacadv</td>
+<td><div id=sm_vacadv_vacadv_worse_end>vacadv_worse_end</div></td>
+<td><p>function</br><code> def worse_update_val(current_time, parameter):
+parameter[self.val_name] += 1
+parameter[self.curing_status_name] = False
+</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_select_get_vac>select_get_vac</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_get_vac_0>get_vac_0</div></td>
+<td><p>function</br><code> lambda current_time, parameter, vac_i=vac_i: self.set_vac_get(
+vac_i, current_time, parameter
+)
+</code></p><p>default parameter</br><code>vac_i=0</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_vac2eff_vac>vac2eff_vac</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_feversum</td>
+<td><div id=sm_feversum_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_get_vac_1>get_vac_1</div></td>
+<td><p>function</br><code> lambda current_time, parameter, vac_i=vac_i: self.set_vac_get(
+vac_i, current_time, parameter
+)
+</code></p><p>default parameter</br><code>vac_i=1</code></p></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_vac2eff_no_effect_path>vac2eff_no_effect_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_vac2eff_effect_path>vac2eff_effect_path</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_vaccine>vaccine</div></td>
+<td><p>function</br><code> lambda current_time, parameter, vac_type=vac_type: self.set_vac_type(
+vac_type, current_time, parameter
+)
+</code></p><p>default parameter</br><code>vac_type=vaccine</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_vac2eff_no_effect>vac2eff_no_effect</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2eff", state_name="vac2eff_no_effect": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2eff, state_name=vac2eff_no_effect</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_get_vac_2>get_vac_2</div></td>
+<td><p>function</br><code> lambda current_time, parameter, vac_i=vac_i: self.set_vac_get(
+vac_i, current_time, parameter
+)
+</code></p><p>default parameter</br><code>vac_i=2</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_drop>drop</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2eff</td>
+<td><div id=sm_vac2eff_vac2eff_effect>vac2eff_effect</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2eff", state_name="vac2eff_effect": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2eff, state_name=vac2eff_effect</code></p></td>
+</tr>
+<tr>
+<td>sm_vac</td>
+<td><div id=sm_vac_init_end>init_end</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_PCR_request>PCR_request</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_pcr</td>
+<td><div id=sm_pcr_PCR_reception_branch>PCR_reception_branch</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_pcr", state_name="PCR_reception_branch": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_pcr, state_name=PCR_reception_branch</code></p></td>
+</tr>
+<tr>
+<td>sm_feversum</td>
+<td><div id=sm_feversum_start>start</div></td>
+<td></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_vac>vac2adv_vac</div></td>
+<td><p>function</br><code> lambda current_time, parameter, sm_name="sm_vac2adv", state_name="vac2adv_vac": hpm.set_parameter(
+sm_name, state_name, current_time, parameter
+)
+</code></p><p>default parameter</br><code>sm_name=sm_vac2adv, state_name=vac2adv_vac</code></p></td>
+</tr>
+<tr>
+<td>sm_vac2adv</td>
+<td><div id=sm_vac2adv_vac2adv_none_path>vac2adv_none_path</div></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){if(window.getSelection().toString())return;a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+<aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents></nav>
+</div>
+</aside>
+</main>
+</body>
+</html>
